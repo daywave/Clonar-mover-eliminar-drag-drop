@@ -61,7 +61,7 @@ function start(e) {
 
             // En el cuadro2 el elemento 3 no se puede soltar cualquier otra combinacion si es posible soltarla
 		
-			if (!((e.target.id=="cuadro2") && (elementoArrastrado == 'arrastrable3'))){
+			if (!((e.target.id=="cuadro2") && (elementoArrastrado == 'arrastrable3') || ((e.target.id=="cuadro2") && (elementoArrastrado == 'arrastrable4')))){
 				console.log("elemento soltado");
 			
 				e.target.appendChild(document.getElementById(elementoArrastrado));
@@ -103,11 +103,15 @@ function start(e) {
 
 	        /*Termina en la linea de arriba ... programacion utilizando la libreria jquery para obtener las coordenadas exactas
 			  del cursor y realizar en esa posicion el soltado*/
-
-
 			            document.getElementById(elementoArrastrado).style.position = "absolute";
+
+						alert("Felicidades")
+						console.log("Intento exitoso")
+		 }//FIN DEL IF CONDICIONALES
+		 else{
+			console.log("LO HICISTE MAL PENDEJO");
+			alert("LO HICISTE MAL PENDEJO");
 		 }
-			
 		}
 
 		
