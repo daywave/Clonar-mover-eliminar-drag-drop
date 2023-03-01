@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+	<link rel="stylesheet" href="estilos.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+	<script src="script.js"></script>
+    <style>
+    
+    </style>	
+</head>
+<body>
+    <header>
+		<h1> Un ejemplo del uso de Drag & Drop en HTML5 </h1>
+	</header>
+
+	<section>
+		<div id="cuadro1" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return drop(event)">
+
+			<div class="cuadradito" id="arrastrable1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+				1
+			</div>	
+			<div class="cuadradito" id="arrastrable2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+				2
+			</div>
+			<div class="cuadradito" id="arrastrable3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+				3
+			</div>
+		</div>
+		<div id="cuadro2" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return drop(event)">
+		</div>
+		<div id="cuadro3" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)">
+			Clonadora
+		</div>
+		<div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">Papelera</div>
+	</section>
+
+
+</body>
+</html>     
