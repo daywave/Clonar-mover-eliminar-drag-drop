@@ -1,4 +1,8 @@
 contador = 0; // Variable global para tener poder poner un id unico a cada elemento cuando se clona.
+
+var NameAnimales = ["Pez", "Manta", "Ballena", ""];
+lista = lista.sort(function() {return Math.random() - 0.5});
+
  
 function start(e) {
 	        console.log("inicia arrastre");
